@@ -1,0 +1,13 @@
+{% extends 'accounts/base.html' %}
+{% load static %}
+
+{% block left-col %}
+ <form method="post">
+    {% csrf_token %}
+   <legend class="border-bottom mb4">Delete Post</legend>
+    <h2>Sure to delete the post "{{ object.title }}"</h2>
+    <button class="btn bnt-outline-danger"type="submit">Yes,Delete</button>
+     <a class="btn bnt-outline-secondary" href="{% url 'Posts_detail' object.id %}">Cancel</a>
+
+  </form>
+  {% endblock left-col %}

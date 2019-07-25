@@ -1,0 +1,12 @@
+{% extends 'accounts/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block left-col %}
+ <form method="post">
+    {% csrf_token %}
+   <h2>Create Account</h2>
+    {{form|crispy}}
+    <button type="submit">Sign up</button>
+
+  </form>
+  {% endblock left-col %}

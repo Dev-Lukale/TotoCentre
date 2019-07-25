@@ -1,0 +1,18 @@
+{% extends 'accounts/base.html' %}
+{% load static %}
+{% block left-col %}
+ <div><h1>{{user.user_name}} Profile</h1></div>
+        <div>
+		    <a  href="{{ user.profile.image.url }}"><img id="profile-pic" style="height: 80px"src="{{ user.profile.image.url }}"></a>
+		</div>
+
+		<div>
+    		<h1>{{user.user_name}}</h1>
+			<p>{{user.email}}</p>
+     	</div>
+     	<div>
+     		<a href="{% url 'Posts_create' %}"><button>Create Post</button></a>
+     		<a href="{% url 'Posts_view' %}"><button>Community</button></a>
+            <a href="#"><button>My Posts</button></a>
+        </div>
+{% endblock left-col %}

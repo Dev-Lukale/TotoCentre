@@ -1,0 +1,97 @@
+{% extends 'accounts/base.html' %}
+{% load static %}
+
+{% block left-col %}
+<div class="main">
+	<h5 class="faint-headline">Home/</h5>
+	<div>
+		<div class="faint-headline"><a href="{% url 'getting_pregnant' %}">Getting Pregnant</a></div>
+		<div class="home-content-container">
+			<div class="slide-images">
+					<div class="image-slide">
+						<img id="home-content" src="{% static 'accounts/images/main.jpg' %}" alt="main">
+						<div class="image-text"><h2>Before trying to get pregnant</h2></div>
+					</div>
+					<div image-slide>
+						<img id="home-content" src="{% static 'accounts/images/main.jpg' %}" alt="main">
+						<div class="image-text"><h2>Before trying to get pregnant</h2></div>
+					</div>
+					<div image-slide>
+						<img id="home-content" src="{% static 'accounts/images/main.jpg' %}" alt="main">
+						<div class="image-text"><h2>Before trying to get pregnant</h2></div>
+					</div>
+			    </div>
+	    </div>
+	    <div class="faint-headline">
+	       <h3>About Getting Pregnant</h3>
+	        <ul style="list-style:square;">
+	    		<li>Preparing To Conceive</li>
+	    		<li>Trying To Conceive</li>
+	    		<li>Related Posts</li>
+	        </ul>
+	    </div>
+    </div>
+
+
+    <div>
+	    <div class="faint-headline"><a href="{% url 'pregnancy' %}">Pregnancy</a></div>
+		<div class="home-content-container">
+			<img id="home-content" src="{% static 'accounts/images/main.jpg' %}" alt="main">
+			<div class="image-text"><h2>Could I Be Pregnant</h2></div>
+	    </div>
+	    <div class="faint-headline">
+	       <h3>About Pregnancy</h3>
+	        <ul style="list-style:square;">
+	    		<li>Could I be pregnant</li>
+	    		<li>Pregnancy Week by Week</li>
+	    		<li>Health and Safety</li>
+	    		<li>Your Pregnancy Life</li>
+	    		<li>Preparing for My Baby</li>
+	    		<li>Related Posts</li>
+	        </ul>
+	    </div>
+    </div>
+
+    <div>
+	    <div class="faint-headline"><a href="{% url 'baby' %}">Baby</a></div>
+		<div class="home-content-container">
+			  <img id="home-content" src="{% static 'accounts/images/main.jpg' %}" alt="main">
+			  <div class="image-text"><h2>New Born Baby</h2></div>
+	    </div>
+	    <div class="faint-headline">
+	       <h3>About Baby</h3>
+	        <ul style="list-style:square;">
+	    		<li>Baby Names</li>
+	    		<li>Baby Showers</li>
+	    		<li>Related Posts</li>
+	        </ul>
+	    </div>
+	</div>
+
+
+    <div>
+	    <div class="faint-headline"><a href="{% url 'health' %}">Health</a></div>
+		<div class="home-content-container">
+			<img id="home-content" src="{% static 'accounts/images/main.jpg' %}" alt="main">
+			<div class="image-text"><h2>Living A Healthy Life</h2></div>
+	    </div>
+	    <div class="faint-headline">
+	       <h3>About Health</h3>
+	        <ul style="list-style:square;">
+	    		<li>Preparing To Conceive</li>
+	    		<li>Trying To Conceive</li>
+	    		<li>Related Posts</li>
+	        </ul>
+	    </div>
+
+    </div>	
+</div>
+<div class="content">
+	
+</div>
+
+{% endblock left-col %}	
+{% block right-col %}
+<h2>advertisments</h2>
+{% endblock right-col %}
+
